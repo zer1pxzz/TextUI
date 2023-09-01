@@ -1,19 +1,19 @@
 # Display UI
 
 ```lua
-exports['zeripxzz-textui']:OpenUI('Bind', 'Title', 'Desc')
+exports['zeripxzz-textui']:ShowUI('Bind', 'Title', 'Desc')
 ```
 # Or
 ```lua
-TriggerEvent('zeripxzz-textui:OpenUI', 'Bind', 'Title', 'Desc')
+TriggerEvent('zeripxzz-textui:ShowUI', 'Bind', 'Title', 'Desc')
 ```
 
 # Hide UI
 
 ```lua
-exports['zeripxzz-textui']:CloseUI()
+exports['zeripxzz-textui']:HideUI()
 ```
 # Or
 ```lua
-TriggerEvent('zeripxzz-textui:CloseUI')
+TriggerEvent('zeripxzz-textui:HideUI')
 ```
