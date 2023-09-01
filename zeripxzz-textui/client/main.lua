@@ -1,6 +1,20 @@
 local InTextUI = false
 local InSetings = false
 
+local Config = {
+	['Setings'] = {
+		['Command'] = {
+			['Name'] = 'setings' -- Commands Name
+		}
+	}
+}
+
+Citizen.CreateThread(function()
+	RegisterCommand(Config['Setings']['Command']['Name'], function()
+		ShowSetings()
+	end)
+end)
+
 RegisterNetEvent('zeripxzz-textui:ShowUI')
 AddEventHandler('zeripxzz-textui:ShowUI', function(bind, title, msg)	
 	ShowUI(bind, title, msg)
