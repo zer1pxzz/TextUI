@@ -15,8 +15,7 @@ files {
 }
 
 client_scripts {
-	'client/main.lua',
-	'config.lua'
+	'client/main.lua'
 }
 
 export 'ShowUI'
