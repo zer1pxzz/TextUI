@@ -15,6 +15,8 @@ function saveActiveState() {
 }
 
 function restoreActiveState() {
+  const bind = $("#bind");
+  const message = $("#message");
   const isActive = localStorage.getItem('isActive') === 'true';
   if (isActive) {
     Toggle.classList.add('active');
@@ -27,8 +29,6 @@ function restoreActiveState() {
     Title.classList.add('active');
     Msg.classList.add('active');
   }
-  const bind = $("#bind");
-  const message = $("#message");
   bind.css('background-color', localStorage.getItem("selectedPrimaryColor"));
   message.css('background-color', localStorage.getItem("selectedSecondaryColor"));
 }
